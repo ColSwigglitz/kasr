@@ -1,3 +1,4 @@
+import "./src/navigation.mjs";
 import { content } from "./src/content.mjs";
 const escape = (s) =>
   String(s).replace(
@@ -22,25 +23,6 @@ document.querySelector("#gallery-grid").innerHTML = content.gallery
 const story = content.story;
 document.querySelector("#story-title").textContent = story.title;
 document.querySelector("#story-summary").textContent = story.summary;
-const menu = document.querySelector("#menu-toggle"),
-  nav = document.querySelector("#navigation");
-menu.addEventListener("click", () => {
-  const open = menu.getAttribute("aria-expanded") !== "true";
-  menu.setAttribute("aria-expanded", open);
-  nav.classList.toggle("open", open);
-});
-nav.addEventListener("click", (e) => {
-  if (e.target.closest("a")) {
-    menu.setAttribute("aria-expanded", "false");
-    nav.classList.remove("open");
-  }
-});
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    menu.setAttribute("aria-expanded", "false");
-    nav.classList.remove("open");
-  }
-});
 const dialog = document.querySelector("dialog");
 document.querySelector("#gallery-grid").addEventListener("click", (e) => {
   const button = e.target.closest("[data-image]");

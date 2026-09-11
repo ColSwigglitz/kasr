@@ -1,0 +1,333 @@
+.giving-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+  padding-block: 35px 75px;
+  align-items: center;
+}
+.back-link {
+  display: inline-block;
+  font-size: 0.875rem;
+  margin-bottom: 32px;
+  text-decoration: none;
+  color: var(--muted);
+}
+.giving-message h1 {
+  font-size: clamp(3.2rem, 4.8vw, 4.8rem);
+  margin-bottom: 24px;
+}
+.giving-lead {
+  font-size: 1.1rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.giving-photo {
+  margin: 30px 0 0;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.giving-photo img {
+  width: 100%;
+  height: 255px;
+  object-position: center 58%;
+}
+.giving-photo figcaption {
+  position: absolute;
+  bottom: 14px;
+  left: 16px;
+  font-size: 0.75rem;
+  color: white;
+  background: #173e3be6;
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+.giving-panel {
+  background: #fff;
+  border: 1px solid #dcded6;
+  border-top: 5px solid var(--rust);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 14px 45px #243c3909;
+}
+.panel-kicker {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--rust);
+  display: block;
+  margin-bottom: 17px;
+}
+.giving-panel h2 {
+  font-size: 2.7rem;
+  margin-bottom: 18px;
+}
+.giving-panel > p {
+  color: var(--muted);
+}
+.giving-primary {
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+  margin-top: 26px;
+}
+.giving-primary h3 {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+.giving-primary > p {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.giving-continue {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 7px;
+  padding: 17px 22px;
+}
+.giving-primary .checkout-note {
+  font-size: 0.8rem;
+  margin: 12px 0 22px;
+  text-align: center;
+}
+.paypal-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+.paypal-option > a {
+  font-weight: bold;
+}
+.giving-trust {
+  border-radius: 4px;
+  background: #f0f3ed;
+  padding: 15px 18px;
+  margin: 12px 0 20px;
+}
+.giving-trust p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+.other-link {
+  font-size: 0.875rem;
+  display: block;
+  text-align: center;
+}
+.giving-support {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  border-top: 1px solid var(--line);
+  padding-block: 65px;
+}
+.giving-support h2 {
+  font-size: 2.3rem;
+  margin: 0;
+}
+.support-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.support-items span {
+  color: var(--rust);
+  font: italic 1rem Georgia;
+}
+.support-items h3 {
+  margin: 16px 0 10px;
+  font-size: 1.1rem;
+}
+.support-items p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin: 0;
+}
+.other-ways {
+  background: #edece3;
+  padding: 65px 0;
+}
+.other-ways h2 {
+  font-size: 2.7rem;
+}
+.giving-alternatives {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+.giving-alternatives article {
+  border-top: 1px solid #a7b0a4;
+  padding-top: 25px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.alternative-tag {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+.giving-alternatives h3 {
+  margin-bottom: 12px;
+}
+.giving-alternatives p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 22px;
+}
+.giving-alternatives a {
+  margin-top: auto;
+}
+.giving-mail address {
+  font:
+    normal 0.95rem/1.8 Arial,
+    Helvetica,
+    sans-serif;
+}
+.stock-details {
+  margin-top: 40px;
+  border-top: 1px solid #bdc4b8;
+  border-bottom: 1px solid #bdc4b8;
+}
+.stock-details summary {
+  padding: 20px 0;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+.stock-details > div {
+  padding: 0 0 22px;
+  max-width: 700px;
+  font-size: 0.95rem;
+}
+.stock-details a {
+  font-weight: bold;
+}
+.stock-details summary:focus-visible {
+  outline: 3px solid var(--rust);
+  outline-offset: 4px;
+}
+.giving-help {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding-block: 60px;
+}
+.giving-help h2 {
+  font-size: 2rem;
+  margin: 0 0 12px;
+}
+.giving-help p {
+  margin: 0;
+  color: var(--muted);
+}
+.giving-help > a {
+  font-weight: bold;
+  overflow-wrap: anywhere;
+  font-size: 0.95rem;
+}
+nav a[aria-current="page"] {
+  box-shadow:
+    0 0 0 3px var(--paper),
+    0 0 0 4px var(--rust);
+}
+@media (max-width: 1000px) {
+  .giving-intro {
+    gap: 35px;
+  }
+  .giving-panel {
+    padding: 30px;
+  }
+  .giving-support {
+    gap: 30px;
+    grid-template-columns: 1fr;
+  }
+  .giving-photo img {
+    height: 250px;
+  }
+}
+@media (max-width: 700px) {
+  .giving-intro {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding-block: 20px 45px;
+  }
+  .back-link {
+    margin-bottom: 24px;
+  }
+  .giving-message h1 {
+    font-size: 3rem;
+    margin-bottom: 16px;
+  }
+  .giving-message h1 br {
+    display: none;
+  }
+  .giving-message .eyebrow {
+    margin-bottom: 16px;
+  }
+  .giving-lead {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .giving-photo {
+    display: none;
+  }
+  .giving-panel {
+    padding: 27px 22px;
+  }
+  .giving-panel h2 {
+    font-size: 2.25rem;
+  }
+  .giving-panel h2 br {
+    display: none;
+  }
+  .giving-primary {
+    margin-top: 20px;
+  }
+  .giving-support {
+    padding-block: 40px;
+  }
+  .support-items {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .support-items h3 {
+    margin-top: 8px;
+  }
+  .giving-support h2 br {
+    display: none;
+  }
+  .other-ways {
+    padding-block: 40px;
+  }
+  .giving-alternatives {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .giving-alternatives p {
+    margin-bottom: 16px;
+  }
+  .giving-help {
+    display: block;
+    padding-block: 40px;
+  }
+  .giving-help > a {
+    display: block;
+    margin-top: 22px;
+  }
+  .giving-panel .paypal-option {
+    flex-wrap: wrap;
+  }
+  .other-ways .section-heading > p {
+    margin-top: 15px;
+  }
+}
+/* Keep explicit line breaks readable when text is enlarged. */
+@media (max-width: 700px) {
+  .giving-message h1 br,
+  .giving-support h2 br {
+    display: initial;
+  }
+}
